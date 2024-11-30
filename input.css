@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.faq-div {
+  @apply bg-white p-6 shadow-md w-[500px] rounded-lg h-40 shadow-blue-600
+}
+.contact {
+  @apply text-white h-14 gap-8 w-[500px] rounded-md flex justify-center text-center items-center text-2xl font-semibold;
+}
