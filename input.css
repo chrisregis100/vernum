@@ -4,8 +4,8 @@
 
 
 .faq-div {
-  @apply bg-white p-6 shadow-md md:w-[500px] w-[400px] rounded-lg h-52 shadow-blue-600
+  @apply bg-white p-6 shadow-md md:w-[500px] w-[300px] rounded-lg md:h-52  shadow-blue-600
 }
 .contact {
-  @apply text-white h-14 gap-8 md:w-[500px] w-[400px] rounded-md flex justify-center text-center items-center text-2xl font-semibold;
+  @apply text-white h-14 gap-8 md:w-[500px] w-[300px] rounded-md flex justify-center text-center items-center text-2xl font-semibold;
 }

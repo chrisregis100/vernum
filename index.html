@@ -21,11 +21,11 @@
 <main class="flex flex-col justify-center items-center md:w-[500px] w-[400px] mx-auto px-4 transition-all ">
     <div class="flex items-center justify-center flex-col gap-5">
 
-        <h3>Exportez vos numéros en format CVF puis passez de 8 à 10 chiffres en quelques secondes.</h3>
+        <h3>Exportez vos numéros en format VCF puis passez de 8 à 10 chiffres en quelques secondes.</h3>
       
-        <a href="#Try-Convert" class="bg-blue-700 mt-10 h-12 md:w-[500px] w-[400px] text-center py-2  mx-auto rounded-md text-white text-2xl hover:bg-blue-700">Convertir maintenant</a>
+        <a href="#Try-Convert" class=" contact bg-blue-700 mt-10  hover:bg-blue-700">Convertir maintenant</a>
     </div>
-   <section class="mt-10 flex flex-col items-center justify-center" id="How-it-works">
+   <section class="mt-10 flex flex-col items-center justify-center" id="how-it-works">
     <h1 class="text-2xl font-bold ">Comment ça marche?</h1>
 
     <div class="flex flex-col gap-8 mt-10">
@@ -49,24 +49,24 @@
 
    <section class="mt-10 flex flex-col items-center justify-center" id="Try-Convert">
           <p class="text-2xl font-bold">Essayez Maintenant</p>
-          <form class="flex flex-col items-center gap-4 mt-10 w-full max-w-md border border-blue-700 rounded-md px-4 py-6">
-            <div class="h-32 flex flex-col gap-2 items-center border border-blue-700 px-4 py-2 rounded-md">
-                <label>Glissez et déposez votre fichier CSV ici ou cliquez pour en importer un</label>
-                <input type="file" id="fileInput" name="file" accept=".vcf">
+          <form class="flex flex-col items-center gap-4 mt-10 p-4 md:w-[520px] w-[350px] shadow-lg shadow-blue-700 rounded-md ">
+            <div class="flex flex-col gap-2 items-center border rounded-md w-[300px] md:w-full py-4 px-4 my-2">
+                <label>Glissez et déposez votre fichier VCF ici ou cliquez pour en importer un</label>
+                <input type="file" id="fileInput" name="file" accept=".vcf" class="w-[300px] md:w-full mx-2">
             </div>
-            <button type="submit" class="bg-blue-700 h-12 w-full rounded-md text-white text-2xl hover:bg-blue-800">Convertir maintenant</button>
+            <button type="submit" class="contact mx-4 bg-blue-700  hover:bg-blue-800">Convertir maintenant</button>
             <a id="downloadLink" href="#" download="contacts_mis_a_jour.vcf" class="hidden mt-4 h-12 bg-green-600 w-full text-center text-white font-bold py-2 px-4 rounded hover:bg-green-700">Télécharger le fichier mis à jour</a>
         </form>
    </section>
 
 
 
-<section class="mt-10 flex flex-col items-center justify-center" id="FAQ">
+<section class="mt-10 flex flex-col items-center justify-center" id="faq">
     <h1 class="text-2xl font-bold">Questions fréquentes</h1>
     <div class="space-y-6 mt-4 mx-auto">
         <div class="faq-div">
             <h3 class="text-xl font-semibold text-blue-800">Quels types de fichiers sont acceptés ?</h3>
-            <p class="mt-2 text-black">Seuls les fichiers au format CSV sont acceptés. Assurez-vous que vos données sont correctement formatées avant l'importation.</p>
+            <p class="mt-2 text-black">Seuls les fichiers au format VCF sont acceptés. Assurez-vous que vos données sont correctement formatées avant l'importation.</p>
         </div>
         <div class="faq-div">
             <h3 class="text-xl font-semibold text-blue-800">Mes données sont-elles sécurisées ?</h3>
@@ -80,7 +80,7 @@
     
 </section>
 
-<section class="mt-10 mb-10">
+<section class="mt-10 mb-10" id="contact">
     <h1 class="text-xl font-bold mb-5">Pour toute questions ou besoins complémentaires, n'hésitez pas à nous contacter.</h1>
     <div class="flex flex-col justify-center items-center gap-2">
         <a href="" class="contact bg-blue-700">
