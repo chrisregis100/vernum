@@ -31,7 +31,6 @@ function processVCF(e) {
                 return parts.join(':');
               }
             }
-            console.log(line);
           }
           
           return line; // Retourner la ligne inchangée si ce n'est pas un numéro à modifier
