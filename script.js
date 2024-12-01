@@ -23,19 +23,21 @@ function processVCF(e) {
             const parts = line.split(':');
             const number = parts[1].trim();
 
-            // Vérifier si le numéro commence par +229 et contient 8 chiffres
             if (/^\+229\d{8}$/.test(number)) {
-              const localNumber = number.slice(4); 
-              if (/^\d{8}$/.test(localNumber)) {
-                parts[1] = `+22901${localNumber}`; 
-                return parts.join(':');
-              }
-
-              // normalisation des numéros mal formatés
-            }
+                // Ajouter "01" après "+229" pour les numéros béninois à 8 chiffres
+                const localNumber = number.slice(4); // Retirer "+229"
+                if (/^\d{8}$/.test(localNumber)) {
+                    parts[1] = `+22901${localNumber}`;
+                }
+            } 
+            // Traiter les numéros mal formatés (exemple : 556-162-62)
             else if (/^\d{3}-\d{3}-\d{2}$/.test(number)) {
-                parts[1] = `+22901${number.replace(/-/g, '')}`; 
+                parts[1] = `+22901${number.replace(/-/g, '')}`; // Normaliser et préfixer
             }
+            console.log(parts.join(':'));
+            
+            return parts.join(':');
+
           }
           
           return line; 
